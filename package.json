@@ -1,0 +1,19 @@
+{
+  "name": "la-croix-the-fishing-trip",
+  "version": "1.0.0",
+  "description": "friday project fishing game ",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pohutukawa-2022/La-Croix-The-fishing-trip.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pohutukawa-2022/La-Croix-The-fishing-trip/issues"
+  },
+  "homepage": "https://github.com/pohutukawa-2022/La-Croix-The-fishing-trip#readme"
+}
