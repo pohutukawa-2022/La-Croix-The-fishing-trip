@@ -1,0 +1,18 @@
+{
+  "theFish": [
+    {
+      "id": 1,
+      "name": "dori",
+      "home": "the reef",
+      "image": "/images/fish-1-dori.png",
+      "size": "10px"
+    },
+    {
+      "id": 2,
+      "name": "bob",
+      "home": "the ocean",
+      "image": "/images/fish-2-bob.png",
+      "size": "10px"
+    }
+  ]
+}
