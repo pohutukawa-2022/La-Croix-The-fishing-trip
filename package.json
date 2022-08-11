@@ -15,5 +15,13 @@
   "bugs": {
     "url": "https://github.com/pohutukawa-2022/La-Croix-The-fishing-trip/issues"
   },
-  "homepage": "https://github.com/pohutukawa-2022/La-Croix-The-fishing-trip#readme"
+  "homepage": "https://github.com/pohutukawa-2022/La-Croix-The-fishing-trip#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "handlebars": "^4.7.7",
+    "jest": "^28.1.3",
+    "nodemon": "^2.0.19",
+    "prettier": "^2.7.1",
+    "supertest": "^6.2.4"
+  }
 }
