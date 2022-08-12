@@ -1,0 +1,10 @@
+/* full screen flexi bacground img */
+body {
+  background-image: url(/public/Images/caught-fish-background.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color:rgb(195, 197, 255);
+
+} 
