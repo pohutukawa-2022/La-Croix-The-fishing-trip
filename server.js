@@ -18,36 +18,8 @@ server.set('view engine', 'hbs')
 
 const dataPath = path.join(__dirname, 'data.json')
 
-let clickCounter = 0
 const randomNo = Math.floor(Math.random() * 3)
 
-server.get('/game', (req, res) => {
-  const contents = fs.readFile(dataPath, 'utf-8')
-  const data = JSON.parse(contents)
-  const fishObject = data.theFish
-  const fish = fishObject[randomNo]
-  const fishImage = fish.image
-  fishImage.onclick = clickCounter++
-  const viewData = {
-    image: fishImage,
-  }
-  res.render('game', viewData)
-})
-
-server.get('/game/details', (req, res) => {
-  const contents = fs.readFile(dataPath, 'utf-8')
-  const data = JSON.parse(contents)
-  const fishObject = data.theFish
-  const fish = fishObject[randomNo]
-  const viewData = {
-    image: fish.image,
-    name: fish.name,
-    home: fish.home,
-  }
-  if (clickCounter === 10) {
-    res.render('details', viewData)
-  }
-})
 module.exports = server
 
 server.get('/', (req, res) => {
@@ -59,12 +31,10 @@ server.get('/location', (req, res) => {
 })
 
 server.get('/location/:location', (req, res) => {
-  const location = req.params.locate // TO BE USED IN STRETCH FOR POSITION CHANGE
   res.render('game')
 })
 
 server.get('/location/:location/:fishID', async (req, res) => {
-  const location = req.params.locate // TO BE USED IN STRETCH FOR POSITION CHANGE
   const dataPath = path.join(__dirname, 'data.json')
   const fishID = req.params.fishID
 
