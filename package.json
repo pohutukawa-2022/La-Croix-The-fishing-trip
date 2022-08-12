@@ -29,6 +29,7 @@
   "homepage": "https://github.com/pohutukawa-2022/La-Croix-The-fishing-trip#readme",
   "dependencies": {
     "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
     "handlebars": "^4.7.7"
   },
   "devDependencies": {
